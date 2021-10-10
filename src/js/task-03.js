@@ -15,7 +15,7 @@ const images = [
 const galleryRef = document.querySelector('.gallery');
 
 const createImg = ({ url, alt }) => {
-  return `<li class ='gallery__item'><img src=${url} alt=${alt}  /></li>`;
+  return `<li class ='gallery__item'><img src=${url} alt=${alt} /></li>`;
 };
 
 const addImages = images.map(createImg);
