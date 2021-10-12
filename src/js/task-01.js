@@ -3,6 +3,7 @@ const classesRef = categoriesRef.children;
 console.log(`Number of categories: ${classesRef.length}`);
 
 const animalsListRef = document.querySelector('.item');
+
 console.log(`Category: ${animalsListRef.firstElementChild.textContent}`);
 console.log(`Elements: ${animalsListRef.firstElementChild.nextElementSibling.children.length}`);
 

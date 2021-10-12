@@ -19,10 +19,11 @@ const onRemove = event => {
 };
 const onCreate = event => {
   let createdBox;
+  const defaultSize = 20;
   for (let i = 1; i <= quantity; i += 1) {
     createdBox = document.createElement('div');
-    createdBox.style.width = '30px';
-    createdBox.style.height = '30px';
+    createdBox.style.width = `${defaultSize + i * 10}px`;
+    createdBox.style.height = `${defaultSize + i * 10}px`;
     createdBox.style.backgroundColor = getRandomHexColor();
     arrayOfBoxes.push(createdBox);
     boxesRef.append(...arrayOfBoxes);
